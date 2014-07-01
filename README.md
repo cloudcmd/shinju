@@ -22,16 +22,16 @@ Exit with `Ctrl` + `C`.
 # Example
 
 ```sh
-    > shinju http://localhost:8000
-    
-    # socket connected
-    client #7 console connected
-    
-    # whoami
-    coderaiser
-    
-    # pwd
-    /home/coderaiser/cloudcmd
+> shinju http://localhost:8000
+
+# socket connected
+client #7 console connected
+
+# whoami
+coderaiser
+
+# pwd
+/home/coderaiser/cloudcmd
 
 ```
 
