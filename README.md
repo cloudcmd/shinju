@@ -15,7 +15,7 @@ npm i shinju -g
 To use Shinju just start it with url wich is first parameter.
 
 ```sh
-shinju http://cloudcmd.jit.su
+shinju <url>
 ```
 Exit with `Ctrl` + `C`.
 
