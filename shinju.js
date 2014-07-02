@@ -51,7 +51,7 @@
             process.exit(0);
         }).on('SIGINT', function() {
             console.log('\n');
-            process.exit();
+            rl.close();
         });
     }
     
