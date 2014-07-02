@@ -36,7 +36,7 @@
             logError(error);
         });
         
-        rl.setPrompt('# ');
+        rl.setPrompt('> ');
         rl.prompt();
         
         onLine(function(line) {
@@ -49,6 +49,9 @@
             callback(line);
         }).on('close', function() {
             process.exit(0);
+        }).on('SIGINT', function() {
+            console.log('\n');
+            process.exit();
         });
     }
     
@@ -56,6 +59,9 @@
         if (json) {
             log(json.stdout);
             logError(json.stderr);
+            
+            if (json.path)
+                rl.setPrompt(json.path + '> ');
         }
     }
     
