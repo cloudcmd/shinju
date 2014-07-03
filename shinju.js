@@ -4,14 +4,33 @@
     var io              = require('socket.io-client'),
         readline        = require('readline'),
         
+        ERROR_EMPTY     = Error('url could not be empty!'),
+        ERROR_TYPE      = Error('url must be string!'),
+        
         rl,
             
         CHANNEL     = 'console-data';
     
-    exports.connect = connect;
+    exports.connect = function(url) {
+        var isString = typeof url === 'string';
+        
+        if (!url)
+            throw(ERROR_EMPTY);
+        else if (!isString)
+            throw(ERROR_TYPE);
+        else
+            connect(url);
+    };
     
     function connect(url) {
-        var socket      = io(url);
+        var socket,
+            regExp  = RegExp('^https?://'),
+            isHTTP  = url.match(regExp);
+        
+        if (!isHTTP)
+            url = 'http://' + url;
+        
+        socket = io(url);
         
         rl = readline.createInterface({
             input: process.stdin,
