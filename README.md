@@ -24,14 +24,16 @@ Exit with `Ctrl` + `C`.
 ```sh
 > shinju http://localhost:8000
 
-# socket connected
-client #7 console connected
+/home/coderaiser/cloudcmd> ps
+  PID TTY          TIME CMD
+  661 pts/0    00:00:00 ps
+32199 pts/0    00:00:00 bash
+32622 pts/0    00:00:01 node
 
-# whoami
+/home/coderaiser/cloudcmd> whoami
 coderaiser
 
-# pwd
-/home/coderaiser/cloudcmd
+/home/coderaiser/cloudcmd>
 
 ```
 
