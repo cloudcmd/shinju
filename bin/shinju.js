@@ -10,5 +10,4 @@
         console.log('shinju <url>');
     else
         shinju.connect(url);
-    
 })();
