@@ -4,8 +4,9 @@
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "Node client for Cloud Commander",
   "homepage": "http://cloudcmd.io",
-   "bin": {
-    "shinju": "./bin/shinju.js"
+  "main": "lib/shinju",
+  "bin": {
+    "shinju": "bin/shinju.js"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "socket.io-client": "~1.0.x"
+    "socket.io-client": "~1.2.0"
   }
 }
