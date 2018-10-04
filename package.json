@@ -2,7 +2,7 @@
   "name": "shinju",
   "version": "0.2.3",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
-  "description": "Node client for Cloud Commander",
+  "description": "CLI for Cloud Commander console",
   "homepage": "http://cloudcmd.io",
   "main": "lib/shinju.js",
   "bin": {
@@ -17,6 +17,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "criton": "^1.0.0",
     "socket.io-client": "^2.1.0"
   },
   "engines": {
