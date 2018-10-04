@@ -1,3 +1,13 @@
+2018.10.04, v1.0.0
+
+feature:
+- (shinju) add ability to use username, password
+- (shinju) add eslint
+- (shinju) es2018-ify
+- (package) socket.io-client v2.1.0
+- (package) coderaiser -> cloudcmd
+
+
 2014.11.28, v0.2.3
 
 feature:
