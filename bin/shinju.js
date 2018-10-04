@@ -1,13 +1,18 @@
 #!/usr/bin/env node
 
-(function() {
-    'use strict';
-    
-    var shinju  = require('../shinju'),
-        url     = process.argv[2];
-    
-    if (!url)
-        console.log('shinju <url>');
-    else
-        shinju.connect(url);
-})();
+'use strict';
+
+const argv = process.argv.slice(2);
+const [
+    url,
+    username,
+    password,
+] = argv;
+
+if (!url)
+    return console.log('shinju <url> <username> <password>');
+
+const shinju = require('..');
+
+shinju.connect(url, username, password);
+
