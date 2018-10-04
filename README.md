@@ -1,7 +1,6 @@
 # Shinju
 
-
-Node client for [Cloud Commander](http://cloudcmd.io).
+CLI for [Cloud Commander](http://cloudcmd.io) [console](https://github.com/cloudcmd/console-io).
 
 # Install
 
@@ -15,7 +14,7 @@ npm i shinju -g
 To use Shinju just start it with url wich is first parameter.
 
 ```sh
-shinju <url>
+shinju <url> <username> <password>
 ```
 Exit with `Ctrl` + `C`.
 
@@ -32,9 +31,7 @@ Exit with `Ctrl` + `C`.
 
 /home/coderaiser/cloudcmd> whoami
 coderaiser
-
 /home/coderaiser/cloudcmd>
-
 ```
 
 # License
